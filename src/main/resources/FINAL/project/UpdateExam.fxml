@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="668.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FINAL.project.UpdateExamController">
+   <content>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1088.0" prefWidth="776.0">
+         <children>
+            <Text fill="#d01212" layoutX="21.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Exam  '-'" wrappingWidth="142.30859375">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text fill="#15b217" layoutX="31.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time: " wrappingWidth="65.1044921875">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <Text fill="#3219ae" layoutX="34.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose Question: ">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <Text fill="#d72e6c" layoutX="37.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grading:">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <Text fill="#4a2e2e" layoutX="30.0" layoutY="629.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notes for teacher :">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <Text fill="#d0bd15" layoutX="28.0" layoutY="683.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notes for students :">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <Text fill="#c65e0f" layoutX="35.0" layoutY="726.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher Name :" wrappingWidth="150.9169921875">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <TextField fx:id="Time" layoutX="92.0" layoutY="69.0" prefHeight="31.0" prefWidth="218.0" />
+            <ScrollPane fx:id="DisplayQuesField" layoutX="39.0" layoutY="126.0" prefHeight="195.0" prefWidth="577.0" />
+            <Button layoutX="331.0" layoutY="327.0" mnemonicParsing="false" onAction="#performAddQuestion" prefHeight="25.0" prefWidth="124.0" text="Add Questions" textFill="#d028cd">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <ScrollPane fx:id="GradingField" layoutX="45.0" layoutY="370.0" prefHeight="189.0" prefWidth="571.0" />
+            <TextArea fx:id="TeacherNotes" layoutX="198.0" layoutY="598.0" prefHeight="48.0" prefWidth="340.0" />
+            <TextField fx:id="TeacherName" layoutX="198.0" layoutY="703.0" prefHeight="31.0" prefWidth="241.0" />
+            <TextArea fx:id="StudentNotes" layoutX="201.0" layoutY="651.0" prefHeight="48.0" prefWidth="339.0" />
+            <Button layoutX="462.0" layoutY="327.0" mnemonicParsing="false" onAction="#performRemoveQuestion" prefHeight="30.0" prefWidth="154.0" text="Remove Questions" textFill="#2bbf26">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="46.0" layoutY="567.0" mnemonicParsing="false" onAction="#performSetGrades" prefHeight="29.0" prefWidth="129.0" text="Set Grades" textFill="#21b8c9">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="550.0" layoutY="734.0" mnemonicParsing="false" onAction="#performCreateExam" prefHeight="24.0" prefWidth="95.0" text="Update Exam" textFill="#a41a7d" AnchorPane.leftAnchor="550.0" AnchorPane.topAnchor="734.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Text fx:id="CorrectTime" fill="RED" layoutX="14.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+            <Text fx:id="CorrectQuestions" fill="RED" layoutX="14.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="CorrectGrades" fill="RED" layoutX="10.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="20.4501953125">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+            <Text fx:id="CorrectTeacherName" fill="RED" layoutX="13.0" layoutY="726.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+            <Label layoutX="31.0" layoutY="30.0" prefHeight="32.0" prefWidth="97.0" text="New Code:">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Text fx:id="SubjectField" layoutX="122.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="14" wrappingWidth="28.6708984375">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text fx:id="CourseField" layoutX="156.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12" wrappingWidth="29.0">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <TextField fx:id="ExamId" layoutX="185.0" layoutY="21.0" prefHeight="45.0" prefWidth="52.0">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </TextField>
+            <Text fx:id="CorrectCode" fill="RED" layoutX="13.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="21.0">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+            <Button layoutX="557.0" layoutY="14.0" mnemonicParsing="false" onAction="#Back" text="Back" />
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FINAL.project.OnlineExamInterface">
+   <children>
+      <TextField fx:id="ID" layoutX="125.0" layoutY="39.0" />
+      <Label layoutX="41.0" layoutY="44.0" text="ID number :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="StarEXam" layoutX="325.0" layoutY="37.0" mnemonicParsing="false" onAction="#ShowExam" prefHeight="30.0" prefWidth="91.0" text="Start Exam" textFill="#1434de">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="submit" disable="true" layoutX="544.0" layoutY="506.0" mnemonicParsing="false" onAction="#submit" prefHeight="20.0" prefWidth="91.0" text="Submit" textFill="#15b925">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="WrongInput" layoutX="281.0" layoutY="42.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ScrollPane fx:id="ScrollPane" layoutX="51.0" layoutY="87.0" prefHeight="411.0" prefWidth="564.0" />
+      <Label layoutX="503.0" layoutY="25.0" text="Remaining Time:" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="minutes" layoutX="547.0" layoutY="54.0" prefHeight="37.0" prefWidth="43.0" text=" 00" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="seconds" layoutX="590.0" layoutY="54.0" prefHeight="37.0" prefWidth="43.0" text=" 00" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="584.0" layoutY="54.0" prefHeight="37.0" prefWidth="11.0" text=":" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="hours" layoutX="503.0" layoutY="54.0" prefHeight="37.0" prefWidth="43.0" text=" 00" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="540.0" layoutY="54.0" prefHeight="37.0" prefWidth="11.0" text=":" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="Back" layoutX="28.0" layoutY="508.0" mnemonicParsing="false" onAction="#Back" text="Back" />
+   </children>
+</AnchorPane>

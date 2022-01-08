@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FINAL.project.LogInController">
+   <children>
+      <Text fill="#0570ff" layoutX="185.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#0570ff" layoutX="187.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="username" layoutX="289.0" layoutY="208.0" />
+      <Button fx:id="loginButton" layoutX="471.0" layoutY="319.0" mnemonicParsing="false" onAction="#PerformLogin" prefHeight="6.0" prefWidth="79.0" text="Log In" textFill="#3700ff">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="438.0" layoutY="191.0" textFill="RED" />
+     
+      <PasswordField fx:id="password" layoutX="289.0" layoutY="262.0" />
+      <Text fill="#aa18c4" layoutX="131.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="High School Test System - HSTS" wrappingWidth="370.84765625">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

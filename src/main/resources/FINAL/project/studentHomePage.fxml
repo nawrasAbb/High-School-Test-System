@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FINAL.project.studentHomePageController">
+   <children>
+      <AnchorPane layoutX="2.0" prefHeight="550.0" prefWidth="650.0">
+         <children>
+            <Text fill="#aa18c4" layoutX="213.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Homepage">
+               <font>
+               
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <Button layoutX="221.0" layoutY="314.0" mnemonicParsing="false" onAction="#PerformExam" prefHeight="30.0" prefWidth="190.0" text="Perform Exam" textFill="#0570ff">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="221.0" layoutY="245.0" mnemonicParsing="false" onAction="#DisplayAllExams" prefHeight="30.0" prefWidth="190.0" text="My Exams" textFill="#0570ff">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="221.0" layoutY="179.0" mnemonicParsing="false" onAction="#DisplayAllGrades" prefHeight="30.0" prefWidth="190.0" text=" My Grades" textFill="#0570ff">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="520.0" layoutY="418.0" mnemonicParsing="false" onAction="#Performlogout" text="Log out" textFill="RED">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

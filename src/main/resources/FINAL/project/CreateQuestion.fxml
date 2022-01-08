@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FINAL.project.CreateQuestionInterfaceController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="5.0">
+         <children>
+            <AnchorPane layoutX="-70.0" prefHeight="550.0" prefWidth="650.0">
+               <children>
+                  <TextField fx:id="Question_ID" layoutX="162.0" layoutY="101.0" />
+                  <TextField fx:id="Answe1" layoutX="158.0" layoutY="189.0" prefHeight="31.0" prefWidth="414.0" />
+                  <TextField fx:id="Answe2" layoutX="158.0" layoutY="227.0" prefHeight="31.0" prefWidth="414.0" />
+                  <TextField fx:id="Answe3" layoutX="157.0" layoutY="270.0" prefHeight="31.0" prefWidth="414.0" />
+                  <TextField fx:id="Answe4" layoutX="157.0" layoutY="308.0" prefHeight="31.0" prefWidth="414.0" />
+                  <TextField fx:id="CorrectAnswer" layoutX="183.0" layoutY="343.0" prefHeight="26.0" prefWidth="124.0" />
+                  <Label layoutX="74.0" layoutY="149.0" text="Description:" />
+                  <Label layoutX="71.0" layoutY="106.0" text="Question_ID:" />
+                  <Label layoutX="71.0" layoutY="194.0" text="Answer1:" />
+                  <Label layoutX="71.0" layoutY="232.0" text="Answer2:" />
+                  <Label layoutX="71.0" layoutY="275.0" text="Answer3:" />
+                  <Label layoutX="71.0" layoutY="313.0" text="Answer4:" />
+                  <Label layoutX="65.0" layoutY="348.0" text="Correct Answer:" />
+                  <Button layoutX="504.0" layoutY="473.0" onAction="#PerformCreateQuestion" prefHeight="30.0" prefWidth="132.0" text="Create Question" textFill="#2610b2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <TextArea fx:id="Description" layoutX="158.0" layoutY="136.0" prefHeight="47.0" prefWidth="414.0" />
+                  <Text fx:id="ErrorID" fill="RED" layoutX="351.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="17.666681110858917">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="ErrorAns2" fill="RED" layoutX="575.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="17.66670048236847">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="ErrorAns1" fill="RED" layoutX="575.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="17.66668701171875">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="ErrorDescription" fill="RED" layoutX="575.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="17.66670048236847">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="ErrorAns3" fill="RED" layoutX="575.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="ErrorAns4" fill="RED" layoutX="575.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="17.66668701171875">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="ErrorCorrectAns" fill="RED" layoutX="308.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="33.66668701171875">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="Errors" layoutX="114.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="336.0042266845703" />
+                  <Text fill="#aa18c4" layoutX="282.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Question">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="80.0" layoutY="16.0" mnemonicParsing="false" onAction="#Back" prefHeight="25.0" prefWidth="74.0" text="Back" />
+                  <Circle fx:id="circle" fill="RED" layoutX="88.0" layoutY="417.0" radius="17.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                  <Text fx:id="ErrorInCircle" layoutX="82.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="!" visible="false" wrappingWidth="11.333369463682175">
+                     <font>
+                        <Font name="System Bold" size="29.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

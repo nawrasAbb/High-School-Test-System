@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#Back" prefHeight="550.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FINAL.project.StartExamForTeacherController">
+   <children>
+      <Label layoutX="254.0" layoutY="35.0" text="Start Exam" textFill="#aa18c4">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="createStartExam" layoutX="427.0" layoutY="457.0" mnemonicParsing="false" onAction="#StartExamButton" prefHeight="8.0" prefWidth="167.0" text="Start Exam" />
+      <TextField fx:id="Code" layoutX="116.0" layoutY="79.0" prefHeight="25.0" prefWidth="161.0" />
+      <Label layoutX="60.0" layoutY="79.0" text="Code:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="ChooseType" layoutX="113.0" layoutY="129.0" onMouseClicked="#setType" prefHeight="5.0" prefWidth="167.0" />
+      <Label layoutX="61.0" layoutY="129.0" text="Type:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="214.0" text="Exam:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ExamID" editable="false" layoutX="116.0" layoutY="211.0" prefHeight="25.0" prefWidth="226.0" />
+      <ScrollPane fx:id="DisplayAllExams" layoutX="60.0" layoutY="257.0" prefHeight="179.0" prefWidth="491.0" />
+      <Text fx:id="CorrectCode" fill="RED" layoutX="34.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="10.1416015625">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Text>
+      <Text fx:id="CossedExam" fill="RED" layoutX="29.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="19.333341598510742">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Text>
+      <Text fx:id="ChoosedType" fill="RED" layoutX="29.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="10.1416015625" AnchorPane.topAnchor="122.0">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Text>
+      <Text fx:id="ErrorWindow" layoutX="72.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="332.6708984375" />
+      <Circle fx:id="circle" fill="RED" layoutX="53.0" layoutY="470.0" radius="19.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Text fx:id="error" layoutX="47.0" layoutY="482.0" strokeType="OUTSIDE" strokeWidth="0.0" text="!" visible="false">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Text>
+      <Button layoutX="46.0" layoutY="23.0" mnemonicParsing="false" onAction="#Back" prefHeight="25.0" prefWidth="49.0" text="Back" />
+      <Label layoutX="53.0" layoutY="181.0" text="* Please choose exam from the sub window" />
+   </children>
+</AnchorPane>

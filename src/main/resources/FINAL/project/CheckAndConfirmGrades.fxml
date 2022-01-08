@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FINAL.project.CheckAndConfirmGrades">
+   <children>
+      <Button fx:id="Back" layoutX="28.0" layoutY="25.0" mnemonicParsing="false" onAction="#BackHome" prefHeight="25.0" prefWidth="58.0" text="Back" textFill="#051ce8" />
+      <Button fx:id="StartAutoChecking" alignment="CENTER" layoutX="209.0" layoutY="260.0" mnemonicParsing="false" onAction="#autoCheck" prefHeight="27.0" prefWidth="205.0" text="Start Auto Checking" textAlignment="CENTER" textFill="#1565e5">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="ConfirmGrades" alignment="CENTER" layoutX="209.0" layoutY="317.0" mnemonicParsing="false" onAction="#Confirm" prefHeight="25.0" prefWidth="205.0" text="Confirm Grades" textAlignment="CENTER" textFill="#0e4ae3">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="TextField" layoutX="197.0" layoutY="174.0" prefHeight="25.0" prefWidth="256.0" />
+      <Label layoutX="150.0" layoutY="63.0" prefHeight="51.0" prefWidth="409.0" text="Please enter the Exam's Code And Choose the required action" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="225.0" layoutY="123.0" prefWidth="200.0" />
+      <Label fx:id="WrongInput" layoutX="577.0" layoutY="173.0" textFill="#d10c0c">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="121.0" layoutY="173.0" text="Code : ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

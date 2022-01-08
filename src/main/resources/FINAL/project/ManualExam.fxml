@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?> 
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FINAL.project.ManualExamController">
+   <children>
+      <ListView fx:id="listview" layoutX="34.0" layoutY="276.0" prefHeight="128.0" prefWidth="582.0" />
+      <Button fx:id="download" layoutX="408.0" layoutY="428.0" mnemonicParsing="false" onAction="#DownloadButton" text="Download">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="submitButton" disable="true" layoutX="533.0" layoutY="490.0" mnemonicParsing="false" onAction="#SubmitButton" text="Submit" textFill="#2abf22">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="533.0" layoutY="428.0" mnemonicParsing="false" onAction="#UploadButton" prefHeight="30.0" prefWidth="85.0" text="Upload">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="34.0" layoutY="32.0" text="Manual Exam">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="483.0" layoutY="32.0" text="Remaining Time:" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="minutes" layoutX="527.0" layoutY="61.0" prefHeight="37.0" prefWidth="43.0" text=" 00" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="seconds" layoutX="570.0" layoutY="61.0" prefHeight="37.0" prefWidth="43.0" text=" 00" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="564.0" layoutY="61.0" prefHeight="37.0" prefWidth="11.0" text=":" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="hours" layoutX="483.0" layoutY="61.0" prefHeight="37.0" prefWidth="43.0" text=" 00" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="520.0" layoutY="61.0" prefHeight="37.0" prefWidth="11.0" text=":" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextArea editable="false" layoutX="34.0" layoutY="113.0" prefHeight="128.0" prefWidth="381.0" text="Instructions:&#10;&#10;-in order to recieve the exam, press download &#10;-when finished answeriing press upload and choose the required file&#10;-after the file name shows on the screen press submit&#10;-if the time runs out you wont be able to submit&#10;-any unclear answer won't count" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="278.0" prefWidth="523.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FINAL.project.SubOnlineExam">
+   <children>
+      <Label fx:id="answer1" layoutX="43.0" layoutY="107.0" prefHeight="30.0" prefWidth="202.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="select1" layoutX="14.0" layoutY="113.0" mnemonicParsing="false" />
+      <Label fx:id="answer2" layoutX="43.0" layoutY="139.0" prefHeight="30.0" prefWidth="202.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="answer3" layoutX="43.0" layoutY="171.0" prefHeight="30.0" prefWidth="202.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="answer4" layoutX="43.0" layoutY="203.0" prefHeight="30.0" prefWidth="202.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="select2" layoutX="14.0" layoutY="146.0" mnemonicParsing="false" />
+      <CheckBox fx:id="select3" layoutX="14.0" layoutY="178.0" mnemonicParsing="false" />
+      <CheckBox fx:id="select4" layoutX="14.0" layoutY="210.0" mnemonicParsing="false" />
+      <TextArea fx:id="content" blendMode="DARKEN" editable="false" layoutX="16.0" layoutY="14.0" prefHeight="84.0" prefWidth="485.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>

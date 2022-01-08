@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FINAL.project.DisplayExamsController">
+   <children>
+      <Label layoutX="249.0" layoutY="51.0" prefHeight="32.0" prefWidth="174.0" text="Display Exams" textFill="#aa18c4">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="136.0" text="choose Exam:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ScrollPane fx:id="showExamsID" layoutX="27.0" layoutY="170.0" prefHeight="200.0" prefWidth="578.0" />
+      <Button layoutX="479.0" layoutY="410.0" mnemonicParsing="false" onAction="#showExams" prefHeight="25.0" prefWidth="122.0" text="Display" />
+      <Button layoutX="33.0" layoutY="26.0" mnemonicParsing="false" onAction="#backtoData" prefHeight="25.0" prefWidth="65.0" text="Back" />
+   </children>
+</AnchorPane>
